@@ -23,6 +23,12 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    
+    <style>
+        .custom-btn {
+            padding: 6px 12px !important;
+        }
+    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -139,35 +145,30 @@
                                 <div class="timeline-body">
                                     <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                <div class="col-lg-4">
+                    <form name="sentMessage" id="contactForm" novalidate action="//formspree.io/bc.phang@gmail.com" method="POST">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name." name="name">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address." name="_replyto">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <!--<button type="submit" class="btn btn-xl custom-btn">Send</button>-->
+                                <input type="submit" value="Send" class="btn btn-xl custom-btn">
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-                                    
-                                    <form action="//formspree.io/bc.phang@gmail.com" method="POST">
-                                        <input type="text" name="name" placeholder="Name">
-                                        <input type="email" name="_replyto" placeholder="Email">
-                                        <input type="submit" value="Send">
-                                    </form> 
                                 </div>
                             </div>
                         </li>
@@ -176,10 +177,8 @@
                                 <img class="img-circle img-responsive" src="//fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c14.14.172.172/s160x160/292620_10150334774536005_1833516_n.jpg?oh=8ce1e277e7defe1f256bea7531672f16&oe=5732576C&__gda__=1465842861_66ef0bdfa664587a2713287e19ef53a7" alt="">
                             </div>
                             <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                </div>
                                 <div class="timeline-body">
-                                    <a href="https://www.facebook.com/phangboonchye" target="_blank" class="text-muted">Message me at Facebook</>
+                                    <a href="https://www.facebook.com/phangboonchye" target="_blank" class="btn btn-xl">Message me at Facebook</a>
                                 </div>
                             </div>
                         </li>
