@@ -24,6 +24,7 @@ $(function() {
                     name: name,
                     email: email
                 },
+                dataType: 'json',
                 cache: false,
                 success: function() {
                     // Success message
